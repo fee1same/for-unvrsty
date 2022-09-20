@@ -1,0 +1,30 @@
+import math
+a = int(input('Введите число а: '))
+type(a)
+b = int(input('ведите число b: '))
+type(b)
+z = int(input('Kакое действие вы хотите произвести: \n 1)Умножение \n 2)Деление \n 3)Сложение \n 4)Вычитание \n 5)Возведение в степень \n 6)Нахождение квадратного корня числа а \n 7)Нахождение квадратного корня числа b \n'))
+type(z)
+if z==1:
+	c = a*b
+	print('Ответ: ', c)
+elif z==2:
+	c = a/b
+	print('Ответ: ', c)
+elif z==3:
+	c = a+b
+	print('Ответ: ', c)
+elif z==4:
+	c = a-b
+	print('Ответ: ', c)
+elif z==5:
+	c = a**b
+	print('Ответ: ', c)
+elif z==6:
+	m = math.sqrt(a)
+	print('Ответ: ', m)
+elif z==7:
+	l = math.sqrt(b)
+	print('Ответ: ', l)
+else:
+	print('Ошибка')
