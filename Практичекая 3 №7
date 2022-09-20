@@ -1,0 +1,14 @@
+import math
+v = float(input('Введите число v: '))
+type(v)
+k = float(input('Введите число k: '))
+type(k)
+if v<k:
+	z = v-k+1
+	print('Ответ: ', z)
+elif k<v:
+	z = k**2 - v**2
+	print('Ответ: ', z)
+else:
+	z = k**2 - k
+	print('Ответ: ', z)
