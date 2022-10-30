@@ -1,0 +1,21 @@
+print("Кол-во строк: ")
+x=int(input())
+print("Кол-во стобцов: ")
+y=int(input())
+k=0
+d=0
+c=[[int(input()) for j in range(y)] for i in range(x)]
+print("Получившийся массив: ")
+for i in range(x):
+    for j in range(y):
+        print(c[i][j],end='')
+    print()
+for i in range(x):
+    for j in range(i+1, y):
+        if c[i][j] <= 0:
+           continue
+        if c[i][j] > 0:
+            d += c[i][j]
+            k+=1
+print('Сумма положительных элементов матрицы: ', d)
+print('Число этих элеменов: ', k)
