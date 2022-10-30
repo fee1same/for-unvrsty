@@ -1,0 +1,11 @@
+x = []
+a = []
+n = int(input('Введите длину массива: '))
+x = [int(input()) for i in range(n)]
+print(x)
+for i in range(n):
+    if i%2 == 1:
+        a.append(x[i])
+print(a)
+b = sum(a)
+print('Сумма = ', b)
