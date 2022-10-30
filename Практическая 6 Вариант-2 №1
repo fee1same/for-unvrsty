@@ -1,0 +1,8 @@
+x = []
+n = int(input('Введите длину массива: '))
+x = [int(input()) for i in range(n)]
+a = min(x)
+print('Минимальное значение: ', a)
+for i in range(n):
+    if x[i] == a:
+        print(i)
