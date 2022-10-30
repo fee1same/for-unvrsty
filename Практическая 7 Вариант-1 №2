@@ -1,0 +1,52 @@
+def F(mas1):
+    for i in range(m):
+        if m>15:
+            return "Ошибка. Массив не может содержать больше 15 элементов"
+    else:
+        return sum(mas1)
+def X(mas1):
+    if F(mas1)!=sum(mas1):
+        return "Error"
+    else:
+        return sum(mas1)/m
+print("Нахождение суммы и среднего арифметического элементов 3-х массивов")
+print("Кол-во элементов первого массива: ")
+mas1=[]
+mas2=[]
+mas3=[]
+m=int(input())
+mas1 = [int(input()) for i in range(m)]
+print("Сумма элементов: ", F(mas1))
+print("Среднее арифметическое: ", X(mas1))
+def F(mas2):
+    for i in range(z):
+        if z>15:
+            return "Ошибка. Массив не может содержать больше 15 элементов"
+    else:
+        return sum(mas2)
+def X(mas2):
+    if F(mas2)!=sum(mas2):
+        return "Error"
+    else:
+        return sum(mas2)/z
+print("Кол-во элементов второго массива: ")
+z=int(input())
+mas2 = [int(input()) for i in range(z)]
+print("Сумма элементов: ", F(mas2))
+print("Среднее арифметическое: ", X(mas2))
+def F(mas3):
+    for i in range(p):
+        if p>15:
+            return "Ошибка. Массив не может содержать больше 15 элементов"
+    else:
+        return sum(mas3)
+def X(mas3):
+    if F(mas3)!=sum(mas3):
+        return "Error"
+    else:
+        return sum(mas3)/p
+print("Кол-во элементов третьего массива: ")
+p=int(input())
+mas3 = [int(input()) for i in range(p)]
+print("Сумма элементов: ", F(mas3))
+print("Среднее арифметическое: ", X(mas3))
