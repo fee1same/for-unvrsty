@@ -1,0 +1,13 @@
+x = []
+a = []
+z = []
+n = int(input('Введите длину массива: '))
+x = [int(input()) for i in range(n)]
+print(x)
+for i in range(n):
+    if x[i] >= 0:
+        z.append(x[i])
+    else:
+        a.append(x[i])
+print('Положительные: ', z)
+print('Отрицательные: ', a)
