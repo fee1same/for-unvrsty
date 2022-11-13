@@ -1,0 +1,39 @@
+X = []
+with open('МинаковЕК_УБ-22_vvod','r') as f:
+    for line in f.readlines():
+        b=line.replace('\n','').split()
+        for i in range(len(b)):
+            b[i]=int(b[i])
+        X.append(b)
+    print(X)
+print('Начальная матрица: ')
+for i in range(len(X)):
+    for j in range(len(X[i])):
+        print(X[i][j],' ',end='')
+    print()
+m=len(X)
+n=len(X[i])
+for i in range(m):
+    for j in range(n):
+        min_x = min(X[i])
+        a = X[i].index(min(X[i]))
+    tmp1 = X[i][0]
+    X[i][0] = X[i][a]
+    X[i][a] = tmp1
+for i in range(m):
+    for j in range(n):
+        max_x = max(X[i])
+        b = X[i].index(max(X[i]))
+    tmp2 = X[i][n-1]
+    X[i][n-1] = X[i][b]
+    X[i][b] = tmp2
+print('Итоговая матрица: ')
+for i in range(m):
+    for k in range(n):
+        print(X[i][k], end=' ')
+    print()
+with open('МинаковЕК_УБ-22_vivod','w') as t:
+    for i in range(m):
+        for k in range(n):
+            t.write(str(X[i][k])+' ')
+        t.write('\n')
